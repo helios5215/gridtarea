@@ -1,0 +1,121 @@
+*{
+  padding: 5px;
+  margin: 5px;
+}
+body{
+  background-color: red;
+}
+.padre{
+  background-color: green;
+  display: grid;
+  height: 50vh;
+  grid-template-areas: 
+  "nombre   nombre  nombre"
+  "c1   c2    c3"
+  "rataca rataca    c4"
+  "rataca rataca    c5"
+  "rataca rataca    c6"
+  "c7   c8  materia"
+  "c7   c9  materia";
+}
+.c1,.c2,.c3,.c4,.c5,.c6,.c7,.c8,.c9,.rataca,.materia,.nombre{
+  background-color: greenyellow;
+}
+.nombre{
+    grid-area: nombre;
+}
+.c1{
+    grid-area: c1;
+}
+.c2{
+    grid-area: c2;
+}
+.c3{
+    grid-area: c3;
+}
+.c4{
+    grid-area: c4;
+}
+.c5{
+    grid-area: c5;
+}
+.c6{
+    grid-area: c6;
+}
+.c7{
+    grid-area: c7;
+}
+.c8{
+    grid-area: c8;
+}
+.c9{
+    grid-area: c9;
+}
+.rataca{
+    grid-area: rataca;
+    display: grid;
+    align-items: center;
+    grid-template-columns: repeat(3, 1fr);
+}
+.rata{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(8, 1fr);
+    height: 75%;
+}
+.cabe,.cuer{
+    margin: 0;
+    background-color: blueviolet;
+    border-radius: 100%;
+}
+.ore1,.ore2{
+    padding-bottom: 0;
+    margin: 0;
+    background-color: orange;
+    border-radius: 100%;
+}
+.ore1{
+    grid-column: 2/3;
+    grid-row: 1/2;
+}
+.ore2{
+    grid-column: 4/5;
+    grid-row: 1/2;
+}
+.cabe{
+    padding-top: 0;
+    grid-column: 2/5;
+    grid-row: 2/5;
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    grid-template-rows: repeat(5, 1fr);
+}
+.ojo1,.ojo2,.boca{
+    background-color: orangered;
+}
+.ojo1,.ojo2{
+    margin: 0;
+    padding: 0;
+    border-radius: 100%;
+}
+.ojo1{
+    grid-column: 2/3;
+    grid-row: 2/3;
+}
+.ojo2{
+    grid-column: 4/5;
+    grid-row: 2/3;
+}
+.boca{
+    margin: 0;
+    border-radius: 50%;
+    grid-column: 2/5;
+    grid-row: 4/5;
+}
+.cuer{
+    grid-column: 1/6;
+    grid-row: 5/9;
+}
+.materia{
+    grid-area: materia;
+}
